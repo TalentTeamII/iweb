@@ -17,7 +17,8 @@ $( elem ).attr("checked",true)
 #### 问题原因
 在jQuery1.6之前和之后api变化,比如，selectedIndex, tagName, nodeName, nodeType, ownerDocument, defaultChecked, 和defaultSelected应该使用.prop()方法获取/设置值。 在jQuery1.6之前这些不属于attribute的property需要用.attr()方法获取。这几个并没有相应的attibute，只有property。
 
-####解决思路
+#### 解决思路
+
 其实明白了上面讲的内容，什么时候该使用.attr()什么时候该使用 .prop()就很清楚了，不过还是传一张坊间很流行的图
 ![](https://images0.cnblogs.com/blog/349217/201310/01161410-90dde52753e040f3a09b83c418e94026.png)
 
