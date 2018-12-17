@@ -42,7 +42,8 @@ alert(n)
 
 
 ```
-####解决思路 &
+#### 解决思路 
+
 可以使用以下解决方案
 
 一、使用 $.trim(username)或者jQuery.trim(name)才是正确的用法。<br/>
