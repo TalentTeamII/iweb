@@ -5,16 +5,16 @@
 
 
 ### 1.jQuery prop和attr
-####问题背景:
+#### 问题背景:
 	使用attr 无法设置/获取状态 checked disable等状态。
 	
-####案例代码
+#### 案例代码
 
 ```javascript
 $( elem ).attr("checked")
 $( elem ).attr("checked",true)
 ```
-####问题原因
+#### 问题原因
 在jQuery1.6之前和之后api变化,比如，selectedIndex, tagName, nodeName, nodeType, ownerDocument, defaultChecked, 和defaultSelected应该使用.prop()方法获取/设置值。 在jQuery1.6之前这些不属于attribute的property需要用.attr()方法获取。这几个并没有相应的attibute，只有property。
 
 ####解决思路
@@ -25,10 +25,10 @@ $( elem ).attr("checked",true)
 
 
 ### 2.jQuery trim()
-####问题背景:
+#### 问题背景:
 jQuery的trim()在某些IE报错或不兼容问题
 
-####案例代码
+#### 案例代码
 
 ```
 
@@ -59,10 +59,10 @@ alert(n)
 ```
 
 ### 3.jQuery remove()
-####问题背景:
+#### 问题背景:
 ie11浏览器发现jq的remove方法总是报错， jquery SCRIPT5007: 缺少对象
 
-####解决思路
+#### 解决思路
 先找要删除的节点的父级节点,然后使用原生js的removeChild方法删除该节点。
 
 ```
